@@ -1,0 +1,15 @@
+Мы будем решать линейное уравнение в матричном виде.
+\begin{equation*}
+	\frac{\partial \widetilde{f}_i}{\partial t} = \sum_j S_{ij}\widetilde{f}_j - \sum_j S_{ji} \widetilde{f}_i - E_i \widetilde{f}_i
+\end{equation*}
+где индексы $ij$ пробегают все состояния фазового пространства $E,L$.
+
+Приближенное решение с шагом $\tau$:
+\begin{equation*}
+	\vec{\widetilde{f}}(t_n) = (1+\tau A)^n \vec{\widetilde{f}}(t_0),
+	 \vec{\widetilde{f}}(t_0) = \vec{C}
+\end{equation*}
+Реальное распределение $f$ --- получается интегрированием функции $\widetilde{f}$ по времени.
+\begin{equation*}
+	f(t) = \int_0^t \widetilde{f} dt
+\end{equation*}
